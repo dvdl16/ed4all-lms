@@ -41,6 +41,7 @@ class UserCreateSchema(BaseModel):
 
 
 class UserResponseSchema(BaseModel):
+    id: int
     email: EmailStr
     name: str
     surname: str

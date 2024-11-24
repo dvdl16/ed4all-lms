@@ -1,6 +1,6 @@
 from lms_backend.app.config import Config
 from lms_backend.app.db import db
-from lms_backend.app.models import User
+from lms_backend.app.models import Course, User
 
 from werkzeug.security import generate_password_hash
 
@@ -29,6 +29,25 @@ def create_demo_user(config: Config):
     )
     db.session.add(user)
     db.session.commit()
+
+
+def create_standard_courses():
+    """
+    Creates default courses in the database
+    """
+    standard_courses = ["maths", "science", "physics", "chemistry"]
+
+    # Check if course already exists
+    for course_name in standard_courses:
+        existing_course = Course.query.filter_by(name=course_name).first()
+
+        if existing_course:
+            return
+
+        # Create new course
+        course = Course(name=course_name)
+        db.session.add(course)
+        db.session.commit()
 
 
 def to_dict(object, model):
