@@ -1,0 +1,24 @@
+[project]
+name = "ed4all-lms"
+version = "0.1.0"
+description = "Learning Management System for Ed4All, our online tutoring company"
+authors = [{name = "Dirk van der Laarse"}]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "flask>=3.1.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/dvdl16/ed4all-lms"
+Changelog = "https://github.com/dvdl16/ed4all-lms/releases"
+Issues = "https://github.com/dvdl16/ed4all-lms/issues"
+CI = "https://github.com/dvdl16/ed4all-lms/actions"
+
+[project.optional-dependencies]
+dev = [
+    "pre-commit>=4.0.1",
+]
+linting = [
+    "ruff>=0.7.2",
+]
