@@ -17,6 +17,10 @@ Dirk van der Laarse
 
 User documentation is hosted using Github Pages: [Ed4All LMS Project Documentation](https://ed4all-lms.laarse.co.za/)
 
+
+### How do I run this
+
+
 ### Development
 
 TBD
