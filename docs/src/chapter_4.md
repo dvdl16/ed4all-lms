@@ -1,6 +1,6 @@
 # Part 4: Implementation
 
-See "How do I run this?" on [github.com/dvdl16/ed4all-lms](https://github.com/dvdl16/ed4all-lms/?tab=readme-ov-file)
+See "How do I run this?" on [github.com/dvdl16/ed4all-lms](https://github.com/dvdl16/ed4all-lms/?tab=readme-ov-file#how-do-i-run-this)
 
 **Evaluation Criteria**
 - ⬜ Basic requirements have been met.
