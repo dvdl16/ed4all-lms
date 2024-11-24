@@ -56,7 +56,7 @@ Tables:
 
 ##### Flask Blueprint Structure
 
-- auth: user authentication and account creation.
+- users: user authentication and account creation.
 - courses: course assignments
 - siyavula: Siyavula API integration
 

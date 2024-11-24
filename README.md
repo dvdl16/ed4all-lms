@@ -27,7 +27,11 @@ TBD
 
 #### Tests
 
-TBD
+We are using an in-memory database for testing. So technically not Unit Tests, but rather Integration Tests. This is still helpful for development.
+
+```shell
+uv run python -m unittest discover -s lms_backend/tests
+```
 
 #### Contributing
 

@@ -1,6 +1,6 @@
-def main():
-    print("Hello from ed4all-lms!")
+from lms_backend.app import create_app
 
+app = create_app()
 
 if __name__ == "__main__":
-    main()
+    app.run(debug=True)
