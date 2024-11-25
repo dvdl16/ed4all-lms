@@ -1,4 +1,6 @@
 from typing import Optional
+
+from flask import render_template
 from lms_backend.app.db import db
 from lms_backend.app.users.routes import auth_bp
 from lms_backend.app.courses.routes import courses_bp
@@ -37,5 +39,9 @@ def create_app(config: Optional[Config] = None):
     app.register_api(auth_bp)
     app.register_api(courses_bp)
     app.register_api(siyavula_bp)
+
+    @app.route("/")
+    def index():
+        return render_template("index.html")
 
     return app

@@ -152,3 +152,4 @@ mdbook serve --open
 - Make use of Flask-Migrate to handle database schema migrations
 - Error handling of non 2xx responses from Siavula API
 - Handle expiration of Siyavula Client Token
+- Use [htmx](https://htmx.org/) and build out a Front End
