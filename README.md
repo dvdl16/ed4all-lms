@@ -1,6 +1,8 @@
 ## Ed4All LMS
 
 [![Deploy Docs](https://github.com/dvdl16/ed4all-lms/actions/workflows/deploy_docs.yml/badge.svg)](https://github.com/dvdl16/ed4all-lms/actions/workflows/deploy_docs.yml)
+[![Fly Deploy](https://github.com/dvdl16/ed4all-lms/actions/workflows/fly-deploy.yml/badge.svg)](https://github.com/dvdl16/ed4all-lms/actions/workflows/fly-deploy.yml)
+[![Python Unit Tests](https://github.com/dvdl16/ed4all-lms/actions/workflows/python-unittest.yml/badge.svg)](https://github.com/dvdl16/ed4all-lms/actions/workflows/python-unittest.yml)
 
 Learning Management System for Ed4All, our online tutoring company
 
