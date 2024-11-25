@@ -34,7 +34,7 @@ class UserCreateSchema(BaseModel):
     name: str
     surname: str
     password: str
-    grade: str
+    grade: int
     country: str
     curriculum: CurriculumEnum
     role: RoleEnum
@@ -45,7 +45,7 @@ class UserResponseSchema(BaseModel):
     email: EmailStr
     name: str
     surname: str
-    grade: str
+    grade: int
     country: str
     curriculum: CurriculumEnum
     role: RoleEnum

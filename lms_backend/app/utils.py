@@ -1,6 +1,7 @@
 from lms_backend.app.config import Config
 from lms_backend.app.db import db
 from lms_backend.app.models import Course, User
+import uuid
 
 from werkzeug.security import generate_password_hash
 
@@ -57,3 +58,11 @@ def to_dict(object, model):
     return {
         column.name: getattr(object, column.name) for column in model.__table__.columns
     }
+
+
+def is_valid_uuid(val):
+    try:
+        uuid.UUID(str(val))
+        return True
+    except ValueError:
+        return False

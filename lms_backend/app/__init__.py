@@ -36,6 +36,6 @@ def create_app(config: Optional[Config] = None):
     # Register blueprints
     app.register_api(auth_bp)
     app.register_api(courses_bp)
-    app.register_blueprint(siyavula_bp, url_prefix="/siyavula")
+    app.register_api(siyavula_bp)
 
     return app

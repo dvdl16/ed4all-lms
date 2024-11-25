@@ -9,7 +9,7 @@ from lms_backend.app.auth import basic_auth
 from lms_backend.app.utils import to_dict
 
 # Set tags for use in OpenAPI Swagger documentation
-auth_tag = Tag(name="courses", description="Course Assignments")
+courses_tag = Tag(name="courses", description="Course Assignments")
 
 # Set Flask Blueprint
 courses_bp = APIBlueprint("courses", __name__)
@@ -28,7 +28,9 @@ class AssignmentResponseSchema(BaseModel):
 
 
 @courses_bp.post(
-    "/assignments", tags=[auth_tag], responses={200: AssignmentResponseSchema, 409: {}}
+    "/assignments",
+    tags=[courses_tag],
+    responses={200: AssignmentResponseSchema, 409: {}},
 )
 @basic_auth.login_required
 def assign_course(body: AssignmentCreateSchema):

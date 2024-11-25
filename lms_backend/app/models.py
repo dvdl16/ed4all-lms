@@ -7,7 +7,7 @@ class User(db.Model):
     name = db.Column(db.String(50))
     surname = db.Column(db.String(50))
     password_hash = db.Column(db.String(128), nullable=False)
-    grade = db.Column(db.String(10))
+    grade = db.Column(db.Integer)
     country = db.Column(db.String(50))
     curriculum = db.Column(db.String(50))
     siyavula_account_id = db.Column(db.String(50))

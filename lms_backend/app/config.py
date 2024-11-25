@@ -8,6 +8,13 @@ class Config:
     DEMO_USER_NAME = os.environ.get("DEMO_USER_NAME", "foo@bar.co")
     DEMO_USER_PASS = os.environ.get("DEMO_USER_PASS", "changeme")
 
+    SIAVULA_API_CLIENT_NAME = os.environ.get("SIAVULA_API_CLIENT_NAME")
+    SIAVULA_API_CLIENT_PASS = os.environ.get("SIAVULA_API_CLIENT_PASS")
+    SIAVULA_API_CLIENT_REGION = os.environ.get("SIAVULA_API_CLIENT_REGION", "ZA")
+    SIAVULA_API_CLIENT_CURRICULUM = os.environ.get(
+        "SIAVULA_API_CLIENT_CURRICULUM", "CAPS"
+    )
+
 
 class TestingConfig(Config):
     TESTING = True

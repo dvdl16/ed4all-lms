@@ -21,8 +21,10 @@
             "request": "launch",
             "module": "flask",
             "env": {
-                "FLASK_APP": "run.py",
-                "FLASK_DEBUG": "1"
+                "FLASK_APP": "wsgi.py",
+                "FLASK_DEBUG": "1",
+                "SIAVULA_API_CLIENT_NAME": "foo",
+                "SIAVULA_API_CLIENT_PASS": "bar"
             },
             "args": [
                 "run",
